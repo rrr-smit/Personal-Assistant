@@ -9,6 +9,7 @@
 		<script src="js/skel.min.js"></script>
 		<script src="js/skel-layers.min.js"></script>
 		<script src="js/init.js"></script>
+                <script src="js/side nav.js"></script>
 		<noscript>
 			<link rel="stylesheet" href="css/skel.css" />
 			<link rel="stylesheet" href="css/style.css" />
@@ -22,32 +23,42 @@
 				<h1><a href="#">Personal Assistant</a></h1>
 				<nav id="nav">
 					<ul>
-						<li><a>Home</a></li>
-						<li><a href="#" class="button special">Sign Up</a></li>
-                                                <li><a href="#" class="button special">Login</a></li>
+						<li><a href="inhome.html">Home</a></li>
+						
 					</ul>
 				</nav>
 			</header>
   <!-- ----body------- -->
-  <div class="container">
-    <h2>TASK MANAGER</h2>
-    <p>This app helps you to manage your task in most time efficient manner,schedule all your events in the best way making your life easier.</p>
-    <ul>
-        
-      <li style="padding-bottom: 3%">
-          <div style="float: left"> <a href="#"><img class="taskIcon" src="images\return.png" alt=""></a></div> 
-          <div style="padding-left:5% "><a href= "#"><h5>PREVIOUS TASK</h5></a></div>
-      </li>
-      <li style="padding-bottom: 3%">
-          <div style="float: left"><a href="#" ><img class="taskIcon" src="images\add.png" alt=""></a></div>
-          <div style="padding-left:5%"><a href="#" ><h5>NEW TASK</h5></a></div>
-      </li>
-      <li style="padding-bottom: 3%">
-          <div style="float: left"><a href="#"><img class="taskIcon" src="images\notification.png" alt=""></a></div>
-          <div style="padding-left:5%"><a href="#"><h5>SET REMINDER</h5></a></div>
-      </li>
-    </ul>
-  </div>
+                    <div id="mySidebar" class="sidebar" style="width: 0px;">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                            <a class="sidenavcontent" href="activity.html">Activity Tracker</a>
+                            <a href="booking.html" class="sidenavcontent">Bookings</a>
+                            <a href="task.html" class="sidenavcontent">Task Manager</a>
+                            <a href="lastpage.html" class="sidenavcontent">Tracker</a>
+                          </div>
+
+                          <div id="main" style="position: absolute; right: 0px; ">
+                            <button class="openbtn" onclick="openNav()"><img src="images/ham.png" ></button>
+                          </div>  
+                  <div class="container">
+                    <h2>TASK MANAGER</h2>
+                    <p>This app helps you to manage your task in most time efficient manner,schedule all your events in the best way making your life easier.</p>
+                    <ul>
+
+                      <li style="padding-bottom: 3%">
+                          <div style="float: left"> <a href="#"><img class="taskIcon" src="images\return.png" alt=""></a></div> 
+                          <div style="padding-left:5% "><a href= "#"><h5>PREVIOUS TASK</h5></a></div>
+                      </li>
+                      <li style="padding-bottom: 3%">
+                          <div style="float: left"><a href="#" ><img class="taskIcon" src="images\add.png" alt=""></a></div>
+                          <div style="padding-left:5%"><a href="#" ><h5>NEW TASK</h5></a></div>
+                      </li>
+                      <li style="padding-bottom: 3%">
+                          <div style="float: left"><a href="#"><img class="taskIcon" src="images\notification.png" alt=""></a></div>
+                          <div style="padding-left:5%"><a href="#"><h5>SET REMINDER</h5></a></div>
+                      </li>
+                    </ul>
+                  </div>
 		<!-- Footer -->
 			<footer id="footer">
 				<div class="container">
